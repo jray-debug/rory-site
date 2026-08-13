@@ -3,50 +3,167 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RORY — Every other app helps you earn points. This one tells you when to use them.</title>
-<meta name="description" content="RORY is a private banker for your credit card points: track every balance in one place and get honest, AI-powered alerts about the best moments to use them. Coming soon to iPhone.">
+<script>document.documentElement.className += ' js';</script>
+<title>RORY — Other apps help you earn points. This one tells you when to use them.</title>
+<meta name="description" content="Rory is a private banker for your credit-card points: one honest line for what needs a decision today, verdicts that include 'skip', and early warning when a program devalues. Coming soon to iPhone.">
+<link rel="canonical" href="https://rorypoints.com/">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rory">
+<meta property="og:url" content="https://rorypoints.com/">
+<meta property="og:title" content="Other apps help you earn points. This one tells you when to use them.">
+<meta property="og:description" content="A private banker for your points. Honest verdicts — including the instruction to do nothing — matched to the cards you actually hold.">
+<meta property="og:image" content="https://rorypoints.com/assets/crest.png">
+<meta property="og:image:alt" content="The RORY crest — an Irish Setter above a gold rule.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RORY — when to use your points, not just how to earn them">
+<meta name="twitter:description" content="Honest, wallet-matched alerts about the best moments to use your points — and when to skip. Coming soon to iPhone.">
+<meta name="twitter:image" content="https://rorypoints.com/assets/crest.png">
+<meta name="theme-color" content="#F3EAD9">
+
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<style>
-  :root{--crimson:#CE2B33;--ink:#121110;--cream:#F3EAD9;--gold:#C4A264;--body:#2a2724;--muted:#6f675e;
-    --serif:'Didot','Bodoni 72','Bodoni MT','Playfair Display',Georgia,serif;
-    --sans:-apple-system,'Helvetica Neue','Segoe UI',Arial,sans-serif;}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--cream);color:var(--body);font-family:var(--sans);line-height:1.65;font-size:17px;
-    display:flex;min-height:100vh;flex-direction:column}
-  main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;padding:64px 24px 48px;max-width:680px;margin:0 auto}
-  .crest{width:min(340px,72vw);height:auto;margin-bottom:44px}
-  h1{font-family:var(--serif);font-weight:400;color:var(--ink);font-size:clamp(26px,4.6vw,36px);
-    line-height:1.3;margin-bottom:18px}
-  h1 em{font-style:italic;color:var(--crimson)}
-  .sub{color:var(--body);font-size:clamp(16px,2.4vw,19px);max-width:52ch;margin:0 auto 34px}
-  .badge{display:inline-block;font-family:var(--serif);letter-spacing:.22em;text-indent:.22em;
-    font-size:13px;color:var(--cream);background:var(--ink);border-radius:999px;
-    padding:12px 26px 11px;text-transform:uppercase}
-  .goldrule{width:120px;height:1px;background:var(--gold);margin:38px auto 30px}
-  .contact{color:var(--muted);font-size:15px}
-  .contact a{color:var(--crimson);text-decoration:none}
-  .contact a:hover{text-decoration:underline}
-  footer{text-align:center;padding:26px 24px 34px;color:var(--muted);font-size:13px;
-    border-top:1px solid #e2d8c6}
-  footer a{color:var(--muted)}
-  footer .sep{margin:0 8px;color:#cbbfa9}
-</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brandmark" href="/"><img src="assets/favicon-512.png" alt="">Rory</a>
+    <nav class="topnav">
+      <a class="plain" href="this-week/">This Week</a>
+      <a class="plain" href="support.html">Support</a>
+      <a class="cta" href="#join">Join</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <img class="crest" src="assets/crest.png" alt="RORY — the Irish Setter crest">
-  <h1>Every other app helps you earn points.<br>This one tells you <em>when to use them</em>.</h1>
-  <p class="sub">RORY watches the world of transfer bonuses, expiring offers, and elevated redemptions — matched to the cards you actually hold, with honest math and the occasional instruction to do nothing. A private banker for your points, with a good dog's instincts.</p>
-  <span class="badge">Coming soon to iPhone</span>
-  <div class="goldrule"></div>
-  <p class="contact">Questions? <a href="mailto:support@rorypoints.com">support@rorypoints.com</a></p>
+
+  <!-- ── Hero ─────────────────────────────────────────────────── -->
+  <section class="band hero">
+    <div class="wrap">
+      <img class="crest" src="assets/crest.png" alt="RORY — the Irish Setter crest">
+      <h1>Other apps help you earn points.<br>This one tells you <em>when to use them</em>.</h1>
+      <p class="banker">Rory watches the world of transfer bonuses, expiring offers, and elevated redemptions — matched to the cards you actually hold, with honest math and the occasional instruction to do nothing. A private banker for your points, with a good dog's instincts.</p>
+      <p class="tell">You don't ask Rory. <em>Rory tells you.</em></p>
+      <p class="navigator">You have the money, not the hours for the games the programs play. Rory plays them for you.</p>
+
+      <div class="goldrule"></div>
+
+      <form class="capture" id="join" data-source="hero" novalidate>
+        <div class="cap-head">Be first on the TestFlight</div>
+        <div class="row">
+          <input type="email" name="email" placeholder="you@email.com" autocomplete="email" aria-label="Email address" required>
+          <button type="submit">Join the list</button>
+        </div>
+        <label class="check">
+          <input type="checkbox" name="android">
+          <span>I'd want it on Android too — note my interest.</span>
+        </label>
+        <p class="fineprint">No noise. One email when the TestFlight opens.</p>
+        <p class="msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── Proof strip ──────────────────────────────────────────── -->
+  <section class="band band--alt proof reveal" id="proof">
+    <div class="wrap">
+      <p class="eyebrow" style="text-align:center">Real product, real week</p>
+      <p class="fence">Detected fast, never predicted.</p>
+
+      <div class="shots">
+        <div class="shot"><figure>
+          <div class="phone ph"><span>Wyndham devaluation card<br>(amber · Use points →)</span></div>
+          <figcaption><b>A chart devaluation, five weeks early.</b> The old award pricing still books until Sep&nbsp;15.</figcaption>
+        </figure></div>
+        <div class="shot"><figure>
+          <div class="phone ph"><span>World of Hyatt<br>two-tranche goal</span></div>
+          <figcaption><b>A welcome offer, tracked in tranches.</b> Spend paced to the bonus, not the ad.</figcaption>
+        </figure></div>
+        <div class="shot"><figure>
+          <div class="phone ph"><span>FOR YOUR REVIEW<br>attention stack</span></div>
+          <figcaption><b>One line for what needs a decision.</b> Everything else stays quiet.</figcaption>
+        </figure></div>
+        <div class="shot"><figure>
+          <div class="phone ph"><span>Rory proposes<br>a goal (ConfirmCard)</span></div>
+          <figcaption><b>Rory proposes the goal.</b> You confirm; he tracks the spend.</figcaption>
+        </figure></div>
+      </div>
+
+      <p class="story">In its first week on real wallets, Rory <b>caught a hotel award-chart devaluation five weeks early</b>, <b>surfaced a targeted 9% grocery promo</b>, and <b>told the user to skip four points sales</b>.</p>
+    </div>
+  </section>
+
+  <!-- ── Feature blocks ───────────────────────────────────────── -->
+  <section class="band reveal" id="features">
+    <div class="wrap">
+      <p class="eyebrow" style="text-align:center">What Rory does</p>
+      <h2 style="text-align:center">Four jobs, done in a banker's voice.</h2>
+
+      <div class="features">
+        <div class="feature">
+          <div class="k">The Feed</div>
+          <h3>Ranked by attention, not by what pays us.</h3>
+          <p>Every live transfer bonus, elevated offer, and points sale, read and given a verdict — including the ones that say skip. Urgency comes first, then what's genuinely new. Most weeks the honest answer is to do nothing, and Rory says so.</p>
+        </div>
+        <div class="feature">
+          <div class="k">The Wallet</div>
+          <h3>One line for what needs a decision today.</h3>
+          <p>Your balances sit under a single "for your review" line that surfaces only what deserves attention now. Goals live on the card that funds them, tracked quietly. No vanity totals, no urgency theater.</p>
+        </div>
+        <div class="feature">
+          <div class="k">Rory</div>
+          <h3>Answers with the one number that matters.</h3>
+          <p>Rory knows the cards you hold and meets a new welcome offer with what it's worth to you, not the headline bonus. When it's worth chasing, he proposes the goal and tracks the spend. When it isn't, he tells you plainly.</p>
+        </div>
+        <div class="feature">
+          <div class="k">Defense</div>
+          <h3>The fire alarm no partner can buy.</h3>
+          <p>Announced devaluations reach you early, while the old chart still books. Stealth changes reach you fast and personally, matched to the balances you actually hold. No program pays to soften that warning.</p>
+        </div>
+      </div>
+
+      <p class="soon"><b>Coming</b> &nbsp;·&nbsp; screenshot balance updates &nbsp;·&nbsp; voice</p>
+    </div>
+  </section>
+
+  <!-- ── This-week band ───────────────────────────────────────── -->
+  <section class="band band--alt deskband reveal">
+    <div class="wrap">
+      <p class="eyebrow">This week at the desk</p>
+      <h2>The moves Rory flagged this week.</h2>
+      <p class="lede" style="margin:0 auto">A short, dated read of the handful of opportunities worth your attention right now — with the verdict on each. The full desk lands in the app.</p>
+      <a class="go" href="this-week/">See this week's digest →</a>
+    </div>
+  </section>
+
+  <!-- ── Reserve Desk tease ───────────────────────────────────── -->
+  <section class="band band--ink reserve reveal">
+    <div class="wrap">
+      <p class="eyebrow">The Reserve Desk</p>
+      <p class="receipt">You paid <em>$695</em> for the card. Rory finds what you're not using.</p>
+      <p class="note">The Reserve Desk goes line by line through the benefits you already pay for, and tells you which ones are worth the trouble. Opening alongside the app.</p>
+      <span class="tag">In the works</span>
+    </div>
+  </section>
+
 </main>
+
 <footer>
-  &copy; 2026 Rory, LLC <span class="sep">·</span> <a href="privacy.html">Privacy Policy</a> <span class="sep">·</span> <a href="support.html">Support</a><br>
-  RORY provides editorial information about loyalty programs. It is not a bank, card issuer, or financial advisor, and is not affiliated with the issuers or programs it describes.
+  <div class="badge-slot" aria-hidden="true">App Store — badge reserved for launch</div>
+  <div class="links">
+    &copy; 2026 Rory, LLC
+    <span class="sep">·</span> <a href="privacy.html">Privacy Policy</a>
+    <span class="sep">·</span> <a href="support.html">Support</a>
+    <span class="sep">·</span> <a href="this-week/">This Week</a>
+  </div>
+  <p class="disclaimer">Rory provides editorial information about loyalty programs. It is not a bank, card issuer, or financial advisor, and is not affiliated with the issuers or programs it describes.</p>
 </footer>
+
+<script src="assets/site.js"></script>
 </body>
 </html>

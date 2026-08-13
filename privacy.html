@@ -23,9 +23,9 @@
   p{margin-bottom:14px}
   ul{margin:0 0 14px 22px}
   li{margin-bottom:8px}
-  .short{background:#fff;border:1px solid #e2d8c6;border-radius:12px;padding:22px 26px;margin-bottom:8px}
-  .short p{margin-bottom:8px}
-  .short .lead{font-family:var(--serif);font-size:18px;color:var(--ink)}
+  .short{margin-bottom:8px}
+  .short p{margin-bottom:10px}
+  .short .lead{font-family:var(--serif);font-size:19px;color:var(--ink)}
   a{color:var(--crimson)}
   footer{margin-top:56px;padding-top:20px;border-top:1px solid #e2d8c6;color:var(--muted);font-size:13px}
 </style>
@@ -41,8 +41,8 @@
 </header>
 
 <div class="short">
-  <p class="lead">The short version — in Rory's own style:</p>
-  <p><b>Your points live on your phone. Not on our servers.</b> Rory doesn't ask for your bank logins, doesn't sync your accounts, and doesn't sell your data. What you enter stays on your device. When you talk to the Coach, what's needed to answer is sent, answered, and not kept. That's the whole arrangement.</p>
+  <p class="lead">The short version:</p>
+  <p><b>Your points live on your phone. Not on our servers.</b> Rory doesn't ask for your bank logins, doesn't sync your accounts, and doesn't sell your data. What you enter stays on your device. When you talk to Rory, what's needed to answer is sent, answered, and not kept. That's the whole arrangement.</p>
 </div>
 
 <h2>Who we are</h2>
@@ -62,23 +62,23 @@
 <p>You may enter into RORY: the credit cards you hold (chosen from a list), points and miles balances, loyalty programs you belong to, offers you choose to track, and redemption goals. <b>This information is stored locally on your device.</b> It is not uploaded to, or stored on, our servers. If you delete the app, it is gone (see "Deleting your data" below).</p>
 <p>The opportunities feed (transfer bonuses, elevated redemptions, and similar) is public information that the app downloads from our content server. Serving that feed does not require sending us your wallet: matching opportunities to your cards happens on your device.</p>
 
-<h2>The Coach (AI conversations)</h2>
-<p>When you talk to Rory, the app sends your message — together with the context needed to answer it, which may include the cards, balances, goals, and tracked offers you've entered — to our server, which processes it with our AI provider, <b>Anthropic</b>, to generate a response. This is transient, per-question processing: our server is stateless and does not store your conversations, wallet, or goals; conversation history you see in the app lives on your device and is re-sent with each question. We do not use your conversations for advertising, and under our API terms Anthropic does not use them to train its models. Coach responses are suggestions about loyalty programs — not financial, legal, or investment advice.</p>
+<h2>Rory (AI conversations)</h2>
+<p>When you talk to Rory, the app sends your message — together with the context needed to answer it, which may include the cards, balances, goals, and tracked offers you've entered — to our server, which processes it with our AI provider, <b>Anthropic</b>, to generate a response. This is transient, per-question processing: our server is stateless and does not store your conversations, wallet, or goals; conversation history you see in the app lives on your device and is re-sent with each question. We do not use your conversations for advertising, and under our API terms Anthropic does not use them to train its models. Rory's responses are suggestions about loyalty programs — not financial, legal, or investment advice.</p>
 
 <h2>Notifications</h2>
 <p>RORY's alerts (expiring offers, activation deadlines, and similar) are currently <b>scheduled locally on your device</b> — the app sets the reminder and iOS delivers it, without a notification identifier being sent to our servers. If a future version adds remote push notifications, delivery will involve a device push token (an identifier that lets a notification reach your device — it does not identify you personally), and we will update this policy first. You can turn notifications off at any time in iOS Settings, and per-alert-type toggles are available in the app.</p>
 
 <h2>Information collected automatically</h2>
-<p>Like most apps, our servers and service providers may log basic technical data when the app fetches content or asks the Coach a question — such as IP address, device type, app version, timestamps, and request status — used for security, rate-limiting, debugging, and keeping the service running. We use this data in aggregate; we do not build advertising profiles from it.</p>
+<p>Like most apps, our servers and service providers may log basic technical data when the app fetches content or asks Rory a question — such as IP address, device type, app version, timestamps, and request status — used for security, rate-limiting, debugging, and keeping the service running. We use this data in aggregate; we do not build advertising profiles from it.</p>
 
 <h2>Affiliate links</h2>
-<p>Some content in the app or on our website may include affiliate links — if you tap through and, for example, apply for a card, we may earn a commission from the issuer's affiliate program. Two commitments: affiliate relationships never determine what opportunities RORY shows you or what the Coach recommends, and tapping an affiliate link shares no information from your RORY wallet with anyone. What happens on the destination site is governed by that site's privacy policy.</p>
+<p>Some content in the app or on our website may include affiliate links — if you tap through and, for example, apply for a card, we may earn a commission from the issuer's affiliate program. Two commitments: affiliate relationships never determine what opportunities RORY shows you or what Rory recommends, and tapping an affiliate link shares no information from your RORY wallet with anyone. What happens on the destination site is governed by that site's privacy policy.</p>
 
 <h2>Service providers</h2>
 <p>We use a small number of service providers to run RORY, each receiving only what's needed for its job:</p>
 <ul>
-  <li><b>Supabase</b> — hosts our public opportunities content and runs the server function that relays Coach questions. Your wallet data is processed there transiently when you ask the Coach a question, and is not stored.</li>
-  <li><b>Anthropic</b> — our AI provider, which processes Coach conversations as described above and does not train on them under our API terms.</li>
+  <li><b>Supabase</b> — hosts our public opportunities content and runs the server function that relays questions to Rory. Your wallet data is processed there transiently when you ask Rory a question, and is not stored.</li>
+  <li><b>Anthropic</b> — our AI provider, which processes conversations with Rory as described above and does not train on them under our API terms.</li>
   <li><b>Apple</b> — app distribution and notification delivery, under Apple's own privacy terms.</li>
   <li><b>GitHub</b> — hosts this website (static pages only; no wallet data ever touches it).</li>
 </ul>
@@ -87,7 +87,7 @@
 <p>Because your data lives on your device, you are in control of deleting it: use the reset option in the app's settings, or simply delete the app. Because RORY does not maintain user accounts, there is no server-side account to delete. If you have contacted support, you may ask us to delete that correspondence at <a href="mailto:support@rorypoints.com">support@rorypoints.com</a>.</p>
 
 <h2>Security</h2>
-<p>Data you enter is protected by your device's own security (passcode, Face ID, and iOS encryption). Content served to the app and Coach conversations travel over encrypted connections (HTTPS). No system is perfectly secure, but our best protection is structural: the most sensitive data simply never leaves your phone, and what does leave is processed and released rather than stored.</p>
+<p>Data you enter is protected by your device's own security (passcode, Face ID, and iOS encryption). Content served to the app and conversations with Rory travel over encrypted connections (HTTPS). No system is perfectly secure, but our best protection is structural: the most sensitive data simply never leaves your phone, and what does leave is processed and released rather than stored.</p>
 
 <h2>Children</h2>
 <p>RORY is not directed to children under 13, and we do not knowingly collect personal information from children. Credit card rewards are grown-up business.</p>

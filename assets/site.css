@@ -1,0 +1,197 @@
+/* Rory — rorypoints.com shared styles (site v2).
+   Palette is the sealed brand set (do not recolor brand elements): crimson / ink / cream / gold.
+   One committed light look, matching the brand book and the app. Banker voice, quiet confidence. */
+
+:root{
+  --crimson:#CE2B33; --crimson-deep:#A81F26;
+  --ink:#121110; --cream:#F3EAD9; --cream-2:#ECE0C9; --paper:#FBF7EE;
+  --gold:#C4A264; --gold-line:#D8C79F;
+  --body:#2a2724; --muted:#6f675e; --line:#e2d8c6;
+  --amber:#8A5E10; --amber-bg:#F7E8C6; --amber-line:#E4C783;
+  --green:#3f6b46;
+  --serif:'Didot','Bodoni 72','Bodoni MT','Playfair Display',Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Helvetica Neue','Segoe UI',Arial,sans-serif;
+  --wrap:1080px; --read:62ch;
+  --r:14px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--cream);color:var(--body);
+  font-family:var(--sans);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  display:flex;flex-direction:column;min-height:100vh;
+}
+img{max-width:100%;display:block}
+a{color:var(--crimson);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2.5px solid var(--crimson);outline-offset:2px;border-radius:4px}
+
+/* ── Rhythm helpers ─────────────────────────────────────────────── */
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.band{padding:clamp(56px,9vw,104px) 0}
+.band--alt{background:var(--cream-2)}
+.band--ink{background:var(--ink);color:#e9e0d1}
+.eyebrow{font-family:var(--serif);letter-spacing:.24em;text-indent:.24em;
+  text-transform:uppercase;font-size:12.5px;color:var(--muted);margin-bottom:16px}
+.band--ink .eyebrow{color:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;color:var(--ink);line-height:1.22;
+  text-wrap:balance;letter-spacing:-.01em}
+.band--ink h2,.band--ink h3{color:#F3EAD9}
+h2{font-size:clamp(25px,3.7vw,36px);margin-bottom:16px}
+h3{font-size:clamp(19px,2.3vw,22px);margin-bottom:8px}
+em{font-style:italic;color:var(--crimson)}
+.band--ink em{color:var(--gold)}
+.lede{font-size:clamp(16px,2vw,19px);max-width:var(--read);color:var(--body)}
+.band--ink .lede{color:#d8cdba}
+
+/* ── Top bar ────────────────────────────────────────────────────── */
+.topbar{position:sticky;top:0;z-index:20;background:rgba(243,234,217,.86);
+  backdrop-filter:saturate(1.1) blur(8px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding-top:12px;padding-bottom:12px}
+.brandmark{display:flex;align-items:center;gap:11px;color:var(--ink);font-family:var(--serif);
+  letter-spacing:.2em;text-indent:.2em;font-size:15px;text-transform:uppercase}
+.brandmark:hover{text-decoration:none}
+.brandmark img{width:30px;height:auto}
+.topnav{display:flex;align-items:center;gap:22px;font-size:14.5px}
+.topnav a{color:var(--body)}
+.topnav .cta{background:var(--ink);color:var(--cream);padding:9px 16px;border-radius:999px;
+  font-weight:600;letter-spacing:.01em}
+.topnav .cta:hover{background:#000;text-decoration:none}
+@media(max-width:560px){.topnav .plain{display:none}}
+
+/* ── Hero ───────────────────────────────────────────────────────── */
+.hero{text-align:center;padding:clamp(48px,8vw,84px) 0 clamp(40px,6vw,64px)}
+.hero .crest{width:min(280px,66vw);margin:0 auto clamp(28px,4vw,40px)}
+.hero h1{font-size:clamp(28px,5vw,44px);line-height:1.24;margin:0 auto 20px;max-width:16ch}
+.hero .banker{max-width:46ch;margin:0 auto;color:var(--body);font-size:clamp(16px,2.2vw,18.5px)}
+.hero .tell{font-family:var(--serif);font-size:clamp(19px,3vw,25px);color:var(--ink);
+  margin:26px auto 6px;max-width:30ch;text-wrap:balance}
+.hero .tell em{font-style:italic;color:var(--crimson)}
+.hero .navigator{max-width:40ch;margin:0 auto 4px;color:var(--muted);font-size:16px}
+.goldrule{width:110px;height:1px;background:var(--gold);margin:34px auto}
+
+/* ── Capture form ───────────────────────────────────────────────── */
+.capture{max-width:452px;margin:0 auto;text-align:left}
+.capture .cap-head{font-family:var(--serif);font-size:20px;color:var(--ink);
+  text-align:center;margin-bottom:14px}
+.capture .row{display:flex;gap:10px}
+.capture input[type=email]{flex:1;min-width:0;font-family:var(--sans);font-size:16px;
+  padding:14px 15px;border:1px solid var(--gold-line);border-radius:11px;background:var(--paper);
+  color:var(--ink)}
+.capture input[type=email]::placeholder{color:#a99e8c}
+.capture input[type=email]:focus{outline:none;border-color:var(--crimson);
+  box-shadow:0 0 0 3px rgba(206,43,51,.14)}
+.capture button{white-space:nowrap;font-family:var(--sans);font-weight:600;font-size:16px;
+  color:var(--cream);background:var(--crimson);border:0;border-radius:11px;padding:14px 22px;
+  cursor:pointer;transition:background .15s ease}
+.capture button:hover{background:var(--crimson-deep)}
+.capture button:disabled{opacity:.55;cursor:default}
+.capture .check{display:flex;align-items:flex-start;gap:9px;margin-top:13px;
+  font-size:14.5px;color:var(--muted);cursor:pointer}
+.capture .check input{margin-top:3px;accent-color:var(--crimson);width:16px;height:16px;flex:none}
+.capture .fineprint{font-size:13px;color:var(--muted);text-align:center;margin-top:12px}
+.capture .msg{margin-top:14px;font-size:15px;text-align:center;min-height:1.2em}
+.capture .msg.ok{color:var(--green);font-weight:600}
+.capture .msg.err{color:var(--crimson-deep)}
+.capture.done .row,.capture.done .check,.capture.done .fineprint{display:none}
+@media(max-width:460px){.capture .row{flex-direction:column}}
+
+/* ── Proof strip ────────────────────────────────────────────────── */
+.proof .fence{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2.6vw,22px);
+  color:var(--ink);text-align:center;margin:0 auto 6px}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:40px 0 8px}
+@media(max-width:900px){.shots{grid-template-columns:repeat(2,1fr);gap:26px}}
+@media(max-width:480px){.shots{grid-template-columns:1fr;max-width:300px;margin-inline:auto}}
+.shot figure{display:flex;flex-direction:column;gap:0}
+.phone{position:relative;border-radius:30px;background:#0c0c0c;padding:9px;
+  box-shadow:0 20px 40px -22px rgba(18,17,16,.55),0 2px 0 rgba(255,255,255,.04) inset;
+  aspect-ratio:9/19.5;overflow:hidden}
+.phone::before{content:"";position:absolute;top:11px;left:50%;transform:translateX(-50%);
+  width:34%;height:15px;background:#0c0c0c;border-radius:0 0 12px 12px;z-index:2}
+.phone img{width:100%;height:100%;object-fit:cover;border-radius:22px;background:var(--cream)}
+/* Placeholder shown until the real screenshot PNG is dropped in */
+.phone.ph{display:flex;align-items:center;justify-content:center;text-align:center}
+.phone.ph span{color:#8d8371;font-size:12.5px;line-height:1.5;padding:0 16px;
+  font-family:var(--sans);letter-spacing:.02em}
+.shot figcaption{margin-top:14px;font-size:13.5px;color:var(--muted);text-align:center;
+  line-height:1.5}
+.shot figcaption b{color:var(--ink);font-weight:600;font-family:var(--sans)}
+.story{max-width:var(--read);margin:34px auto 0;text-align:center;
+  font-size:clamp(16px,2.1vw,18.5px);color:var(--body)}
+.story b{color:var(--ink);font-weight:600}
+
+/* ── Feature blocks ─────────────────────────────────────────────── */
+.features{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:38px}
+@media(max-width:720px){.features{grid-template-columns:1fr}}
+.feature{background:var(--cream);padding:clamp(26px,3.4vw,38px)}
+.band--alt .feature{background:var(--cream-2)}
+.feature .k{font-family:var(--serif);letter-spacing:.16em;text-indent:.16em;text-transform:uppercase;
+  font-size:12px;color:var(--crimson);margin-bottom:12px}
+.feature h3{margin-bottom:10px}
+.feature p{color:var(--body);font-size:16px;line-height:1.6}
+.soon{margin-top:26px;text-align:center;font-size:14.5px;color:var(--muted)}
+.soon b{color:var(--ink);font-family:var(--serif);letter-spacing:.02em;font-weight:400}
+
+/* ── Digest link band ───────────────────────────────────────────── */
+.deskband{text-align:center}
+.deskband .go{display:inline-block;margin-top:18px;font-weight:600}
+
+/* ── Reserve Desk tease ─────────────────────────────────────────── */
+.reserve{text-align:center}
+.reserve .receipt{font-family:var(--serif);font-size:clamp(22px,3.4vw,32px);color:#F3EAD9;
+  line-height:1.32;max-width:20ch;margin:0 auto 18px}
+.reserve .receipt em{color:var(--gold);font-style:italic}
+.reserve .note{color:#c8bda9;max-width:44ch;margin:0 auto;font-size:16px}
+.reserve .tag{display:inline-block;margin-top:24px;font-family:var(--serif);letter-spacing:.22em;
+  text-indent:.22em;text-transform:uppercase;font-size:12px;color:var(--gold);
+  border:1px solid rgba(196,162,100,.4);border-radius:999px;padding:9px 20px}
+
+/* ── Footer ─────────────────────────────────────────────────────── */
+footer{margin-top:auto;text-align:center;padding:30px 24px 40px;color:var(--muted);
+  font-size:13px;border-top:1px solid var(--line);background:var(--cream)}
+footer .links{margin-bottom:10px}
+footer a{color:var(--muted)}
+footer .sep{margin:0 9px;color:#cbbfa9}
+footer .badge-slot{display:inline-flex;align-items:center;gap:8px;margin:4px auto 16px;
+  padding:9px 16px;border:1px dashed var(--gold-line);border-radius:11px;color:#9a8f7c;
+  font-size:12.5px;letter-spacing:.02em}
+footer .disclaimer{max-width:66ch;margin:8px auto 0;line-height:1.55}
+
+/* ── Digest page specifics ──────────────────────────────────────── */
+.digest-head{text-align:center}
+.digest-head .dateline{font-family:var(--serif);letter-spacing:.16em;text-indent:.16em;
+  text-transform:uppercase;font-size:12.5px;color:var(--muted);margin-top:10px}
+.rows{max-width:760px;margin:34px auto 0;display:flex;flex-direction:column;gap:2px;
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--line)}
+.drow{background:var(--paper);padding:22px clamp(18px,3vw,26px)}
+.drow .top{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.pill{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--muted);background:var(--cream-2);border-radius:999px;
+  padding:5px 11px;white-space:nowrap}
+.pill.def{color:var(--amber);background:var(--amber-bg);border:1px solid var(--amber-line)}
+.drow h3{font-size:18.5px;margin:0;flex:1;min-width:60%;line-height:1.32}
+.drow .verdict{margin-top:10px;font-size:15.5px;color:var(--body);line-height:1.6}
+.drow .verdict .label{font-family:var(--serif);font-style:italic;color:var(--crimson);
+  margin-right:6px}
+.drow .meta{margin-top:12px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;
+  font-size:13px;color:var(--muted)}
+.drow .meta a{font-weight:600}
+.morerow{background:var(--cream-2);padding:20px 26px;text-align:center;font-size:15.5px;color:var(--body)}
+.morerow b{color:var(--ink)}
+.watchline{max-width:760px;margin:16px auto 0;padding:0 6px;font-size:14.5px;color:var(--muted);
+  text-align:center}
+.watchline b{color:var(--ink);font-weight:600}
+.ftc{max-width:680px;margin:26px auto 0;font-size:12.5px;color:var(--muted);line-height:1.55;
+  text-align:center;border-top:1px solid var(--line);padding-top:18px}
+
+/* ── Motion (subtle, opt-out honored) ───────────────────────────────
+   Hidden ONLY when JS is present (html.js) — so no-JS visitors and crawlers
+   always see fully rendered content. Reduced-motion users are never hidden. */
+@media(prefers-reduced-motion:no-preference){
+  html.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  html.js .reveal.in{opacity:1;transform:none}
+}

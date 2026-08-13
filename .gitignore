@@ -1,1 +1,5 @@
 .DS_Store
+
+# Internal ops / handoff docs — kept out of the public repo (roadmap, DNS, beta.4 seed notes)
+DEPLOY.md
+SETUP-INSTRUCTIONS.md
