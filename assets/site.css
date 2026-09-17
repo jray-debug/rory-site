@@ -155,9 +155,8 @@ footer{margin-top:auto;text-align:center;padding:30px 24px 40px;color:var(--mute
 footer .links{margin-bottom:10px}
 footer a{color:var(--muted)}
 footer .sep{margin:0 9px;color:#cbbfa9}
-footer .badge-slot{display:inline-flex;align-items:center;gap:8px;margin:4px auto 16px;
-  padding:9px 16px;border:1px dashed var(--gold-line);border-radius:11px;color:#9a8f7c;
-  font-size:12.5px;letter-spacing:.02em}
+footer .appstore{display:inline-block;margin:4px auto 16px;line-height:0}
+footer .appstore img{width:150px;height:50px}
 footer .disclaimer{max-width:66ch;margin:8px auto 0;line-height:1.55}
 
 /* ── Digest page specifics ──────────────────────────────────────── */
@@ -194,3 +193,9 @@ footer .disclaimer{max-width:66ch;margin:8px auto 0;line-height:1.55}
   html.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
   html.js .reveal.in{opacity:1;transform:none}
 }
+
+/* ── App Store (Brief 12, launch patch) ─────────────────────────── */
+.hero .store{margin:26px 0 6px;text-align:center}
+.hero .store .now{font-family:var(--serif);font-size:20px;color:var(--ink);margin:0 0 12px}
+.hero .store .appstore{display:inline-block;line-height:0}
+.hero .store .appstore img{width:150px;height:50px}

@@ -58,7 +58,7 @@
           // 201 = added. 409 = already on the list (unique email) — treat as success, not an error.
           if (res.ok || res.status === 409) {
             form.classList.add('done');
-            say('You are on the list. Watch for one email when the TestFlight opens.', 'ok');
+            say('You are on the list. We write when there is something worth saying.', 'ok');
             return;
           }
           return res.text().then(function (t) {
