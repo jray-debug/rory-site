@@ -2,8 +2,8 @@
 //
 // Reads the same opportunities.json the app's weekly scan publishes, and writes a static, TRIMMED
 // digest page: the top ~5 live opportunities by urgency, each with its verdict, plus a count of the
-// rest ("N more live in the app") and a one-line watchlist teaser. The full digest is a Reserve Desk
-// premium feature — this page is deliberately the free, SEO-facing slice.
+// rest ("N more live in the app") and a one-line watchlist teaser. The full digest is a Rory Premium
+// feature — this page is deliberately the free, SEO-facing slice.
 //
 // Zero marginal authoring: hook this after the Monday `sync-opportunities.mjs` step. It writes both a
 // rolling latest page (this-week/index.html) and a dated archive page (this-week/YYYY-MM-DD/index.html,

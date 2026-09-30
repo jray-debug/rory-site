@@ -72,7 +72,21 @@
     });
   }
 
+  // App Store campaign token. The HTML carries ct=website so a visitor without JavaScript counts as
+  // website; inside TikTok's in-app browser the badges say ct=tiktok instead (App Analytics →
+  // Acquisition → Campaigns). Plain link, same tab — nothing else changes.
+  function tagCampaign() {
+    var ua = (navigator && navigator.userAgent) || '';
+    if (!/musical_ly|BytedanceWebview|Bytedance|TikTok/i.test(ua)) return;
+    var links = document.querySelectorAll('a.appstore');
+    for (var i = 0; i < links.length; i++) {
+      links[i].href = links[i].href.replace('ct=website', 'ct=tiktok');
+    }
+  }
+
   function init() {
+    tagCampaign();
+
     var forms = document.querySelectorAll('form.capture');
     for (var i = 0; i < forms.length; i++) wire(forms[i]);
 
