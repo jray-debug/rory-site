@@ -196,7 +196,7 @@ ${groups.map(groupHtml).join('\n')}
 
   <section class="band">
     <div class="handoff">
-      <p>The wallet is free. Rory Premium tells you which of <em>your</em> balances to move.</p>
+      <p>The wallet is free. Rory Premium cross-checks each week's opportunities against your own balances and tells you what's worth doing — and by when.</p>
       <a class="appstore" href="${esc(BADGE_HREF)}"><img src="/assets/app-store-badge.svg" alt="Download Rory on the App Store" width="150" height="50"></a>
     </div>
   </section>
