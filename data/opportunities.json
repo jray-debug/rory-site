@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-11-02",
-  "source_rev": "440bfd6",
-  "derived_from": "data/scan-2026-11-02.json@440bfd6",
+  "as_of": "2026-11-09",
+  "source_rev": "8a52abe",
+  "derived_from": "data/scan-2026-11-09.json@8a52abe",
   "rows": [
     {
       "id": "rc-freedom-flex-2026-q4",
@@ -736,37 +736,6 @@
       "credit_cycle": null
     },
     {
-      "id": "wo-amex-delta-gold-2026-08",
-      "kind": "welcome_offer",
-      "currency_id": "delta",
-      "partner_pid": null,
-      "applies_to_card_names": [
-        "Amex Delta SkyMiles Gold"
-      ],
-      "applies_to_pids": null,
-      "pill_label": "UP TO 80K + $250",
-      "title": "Delta SkyMiles Gold: as high as 80,000 miles + $250 credit — ends Nov 4",
-      "description": "Raised Aug 27 (Amex's best-ever Delta batch): as high as 80,000 bonus miles PLUS a $250 statement credit after $3,000 in eligible purchases in the first 6 months. Still Amex's variable structure — 80K is the ceiling, no guaranteed miles tranche. Annual fee $0 intro first year, then $150. Public deadline Nov 4, 2026. Sibling offers: Platinum up to 90K + $300/$4,000; Reserve two round-trip Comfort+ certificates + 50K/$10,000. Targeted offers may run higher — check before applying.",
-      "tranches": [
-        {
-          "spend": 3000,
-          "window_months": 6,
-          "points": 80000,
-          "guaranteed": false
-        }
-      ],
-      "bonus_pct": null,
-      "effective_cpp": null,
-      "verdict": "Historically strong window — the $250 credit on top of the 80K ceiling is new, and the $0 first-year fee makes peeking at your real number cheap. If a Delta card was on your list, the Nov 4 deadline is a legitimate forcing function.",
-      "start_date": "2026-08-27",
-      "end_date": "2026-11-04",
-      "end_label": "Ends Wed Nov 4",
-      "source_label": "Amex (product page; structure via uscreditcardguide.com + The Points Guy — rendered at application)",
-      "action_url": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-gold-american-express-card/",
-      "action_label": "See the offer",
-      "credit_cycle": null
-    },
-    {
       "id": "wo-chase-southwest-priority-2026-08",
       "kind": "welcome_offer",
       "currency_id": "swa",
@@ -997,7 +966,7 @@
     },
     {
       "partner_pid": "aa",
-      "currency_id": null,
+      "currency_id": "aa",
       "applies_to_card_names": null,
       "applies_to_pids": null,
       "bonus_pct": null,
@@ -1018,7 +987,7 @@
     },
     {
       "partner_pid": "bonvoy",
-      "currency_id": null,
+      "currency_id": "bonvoy",
       "applies_to_card_names": null,
       "applies_to_pids": null,
       "bonus_pct": 55,
@@ -1090,7 +1059,7 @@
       "ack_verb": "registered"
     },
     {
-      "partner_pid": "jb",
+      "partner_pid": "jetblue",
       "currency_id": "amx",
       "applies_to_card_names": null,
       "applies_to_pids": null,
@@ -1143,7 +1112,7 @@
       "action_label": "See the offer"
     },
     {
-      "currency_id": null,
+      "currency_id": "hh",
       "applies_to_card_names": null,
       "applies_to_pids": null,
       "credit_cycle": null,
@@ -1202,11 +1171,11 @@
       "verdict": "A small bonus — only worth it if you were already planning an Asia Miles redemption; don't transfer speculatively.",
       "start_date": "2026-10-25",
       "source_label": "Frequent Miler + AwardWallet + Your Best Credit Cards",
-      "action_url": "https://www.citi.com/credit-cards/thankyou-rewards",
+      "action_url": "https://www.thankyou.com/",
       "action_label": "Transfer points"
     },
     {
-      "partner_pid": "ba",
+      "partner_pid": "avios",
       "currency_id": "csr",
       "applies_to_card_names": null,
       "applies_to_pids": null,
@@ -1330,6 +1299,111 @@
       "source_label": "AwardWallet + Frequent Miler + Your Best Credit Cards",
       "action_url": "https://www.capitalone.com/learn-grow/money-management/venture-miles-transfer-partnerships/",
       "action_label": "Transfer miles"
+    },
+    {
+      "kind": "transfer_bonus",
+      "applies_to_card_names": null,
+      "applies_to_pids": null,
+      "effective_cpp": null,
+      "credit_cycle": null,
+      "action_label": "Transfer points",
+      "id": "tb-amex-virgin-2026-11",
+      "currency_id": "amx",
+      "partner_pid": "virgin",
+      "bonus_pct": 30,
+      "pill_label": "30% · 1:1.3",
+      "title": "Amex → Virgin Atlantic Flying Club: 30% bonus (1:1.3)",
+      "description": "1,000 Membership Rewards become 1,300 Virgin Atlantic Flying Club points (base 1:1 + 30% bonus) through Nov 30, 2026. Amex bonuses can be targeted — it may not show for every account.",
+      "verdict": "Worth acting on only with a specific Virgin Atlantic award in hand (e.g. its partner awards on Delta or ANA) — transfers cannot be reversed, so price the redemption first.",
+      "start_date": "2026-11-02",
+      "end_date": "2026-11-30",
+      "end_label": "Ends Mon Nov 30",
+      "source_label": "One Mile at a Time + Your Best Credit Cards + Frequent Miler",
+      "action_url": "https://www.americanexpress.com/en-us/benefits/rewards/membership-rewards/"
+    },
+    {
+      "kind": "transfer_bonus",
+      "applies_to_card_names": null,
+      "applies_to_pids": null,
+      "effective_cpp": null,
+      "credit_cycle": null,
+      "action_label": "Transfer points",
+      "id": "tb-cti-turkish-2026-11",
+      "currency_id": "cti",
+      "partner_pid": "turkish",
+      "bonus_pct": 40,
+      "pill_label": "40% · 1:1.4",
+      "title": "Citi → Turkish Miles&Smiles: 40% bonus (1:1.4)",
+      "description": "1,000 ThankYou points become 1,400 Turkish Miles&Smiles miles (base 1:1 + 40% bonus) through Nov 30, 2026. The bonus is capped at 50,000 bonus miles (reached at 125,000 points transferred), is funded by Turkish rather than Citi, and posts to your account after the offer ends — so it will not appear on Citi's own page and is no use for an award you need to book soon.",
+      "verdict": "Strong rate, but only with a specific Turkish-bookable Star Alliance award in hand and no need for the miles before December — transfers cannot be reversed.",
+      "start_date": "2026-11-01",
+      "end_date": "2026-11-30",
+      "end_label": "Ends Mon Nov 30",
+      "source_label": "Your Best Credit Cards + One Mile at a Time + The Points Party",
+      "action_url": "https://www.thankyou.com/"
+    },
+    {
+      "kind": "transfer_bonus",
+      "applies_to_card_names": null,
+      "applies_to_pids": null,
+      "effective_cpp": null,
+      "credit_cycle": null,
+      "action_label": "Transfer points",
+      "id": "tb-cap1-copa-2026-11",
+      "currency_id": "cap",
+      "partner_pid": null,
+      "bonus_pct": 30,
+      "pill_label": "30% · LAUNCH BONUS",
+      "title": "Capital One → Copa Airlines ConnectMiles: 30% launch bonus",
+      "description": "Copa ConnectMiles joined Capital One as a transfer partner at 2:1.5, so the standard rate is 1,000 Capital One miles to 750 ConnectMiles. With the 30% launch bonus, 1,000 miles become 975 ConnectMiles through Dec 1, 2026, 11:59 PM ET. Transfers are in increments of 100 miles with a 1,000-mile minimum.",
+      "verdict": "The bonus only brings the ratio close to 1:1, so it is not a bargain by itself — use it only for a specific Copa or Star Alliance award you have already priced; transfers cannot be reversed.",
+      "start_date": "2026-11-02",
+      "end_date": "2026-12-01",
+      "end_label": "Ends Tue Dec 1",
+      "source_label": "Doctor of Credit + AwardWallet + Your Best Credit Cards",
+      "action_url": "https://www.capitalone.com/learn-grow/money-management/venture-miles-transfer-partnerships/"
+    },
+    {
+      "kind": "points_sale",
+      "currency_id": "hyatt",
+      "applies_to_card_names": null,
+      "applies_to_pids": null,
+      "bonus_pct": null,
+      "credit_cycle": null,
+      "action_label": "Buy points",
+      "id": "ps-hyatt-20off-2026-11",
+      "partner_pid": "hyatt",
+      "effective_cpp": 2.08,
+      "pill_label": "20% OFF · 2.08¢",
+      "title": "World of Hyatt points sale: 20% discount (2.08¢/point)",
+      "description": "World of Hyatt is selling points at 20% off on purchases of 5,000 or more — about 2.08¢ per point at the best tier — through Dec 21, 2026.",
+      "verdict": "Skip unless you are topping off a specific award: 2.08¢ is at the high end of what Hyatt points return. Check the sale on Hyatt's site before buying.",
+      "start_date": null,
+      "end_date": "2026-12-21",
+      "end_label": "Ends Mon Dec 21",
+      "source_label": "Unconfirmed · Upgraded Points",
+      "action_url": "https://world.hyatt.com/content/gp/en/buy-points.html"
+    },
+    {
+      "kind": "points_sale",
+      "currency_id": "aeroplan",
+      "applies_to_card_names": null,
+      "applies_to_pids": null,
+      "bonus_pct": null,
+      "credit_cycle": null,
+      "action_label": "Buy points",
+      "id": "ps-aeroplan-30off-2026-11",
+      "partner_pid": "aeroplan",
+      "effective_cpp": 1.9,
+      "pill_label": "30% OFF · 1.90¢",
+      "title": "Air Canada Aeroplan points sale: 30% discount (1.90¢/point)",
+      "description": "Air Canada is selling Aeroplan points at up to 30% off — about 1.90¢ per point at the best tier — through Nov 18, 2026.",
+      "verdict": "Skip unless you are topping off a specific award: 1.90¢ is above typical Aeroplan value. Check the sale on Air Canada's site before buying.",
+      "start_date": null,
+      "end_date": "2026-11-18",
+      "end_label": "Ends Wed Nov 18",
+      "source_label": "Unconfirmed · Upgraded Points",
+      "action_url": "https://www.aircanada.com/aeroplan/member/buy-points"
     }
   ]
 }
